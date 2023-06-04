@@ -1,0 +1,53 @@
+.contact-wrapper form {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0)
+}
+
+@media(min-width: 1080px) {
+    .contact-wrapper form {
+        width: 800px
+    }
+}
+
+@media(min-width: 1080px)and (max-width: 1080px) {
+    .contact-wrapper form {
+        width: calc(100% - 1rem) !important
+    }
+}
+
+.contact-wrapper form .labelWrap {
+    margin-top: 1rem
+}
+
+.contact-wrapper form .labelWrap label {
+    color: #fff;
+    display: block;
+    text-align: left
+}
+
+.contact-wrapper form .labelWrap textarea {
+    height: auto
+}
+
+.contact-wrapper form .labelWrap .input {
+    border-width: 2px;
+    border-style: solid;
+    border-color: #386947;
+    color: #fff;
+    background-color: rgba(0, 0, 0, .336);
+    width: 100%;
+    font-size: 1rem !important;
+    padding: 1rem !important;
+    border-radius: 1rem
+}
+
+.contact-wrapper form button {
+    border-width: 2px;
+    border-style: solid;
+    border-color: #386947;
+    color: #fff;
+    background-color: rgba(0, 0, 0, .336);
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 1rem
+}

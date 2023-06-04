@@ -1,0 +1,64 @@
+$userInputMargin: 1rem;
+$inputPadding: 1rem;
+$borderRadius: 1rem;
+$textColor: white;
+$borderColor: rgb(56, 105, 71);
+
+
+
+
+
+@mixin borderStyling {
+    border-width: 2px;
+    border-style: solid;
+    border-color: $borderColor;
+}
+
+@mixin coolMixin($color, $bg) {
+    color: $color;
+    background-color: $bg;
+}
+
+.contact-wrapper {
+
+    form {
+        @media (min-width:1080px){
+            width:800px;
+            @media (max-width:1080px){
+                width:calc(100% - 1rem)!important;
+            }
+        }
+        @include coolMixin (white, transparent);
+
+        .labelWrap {
+            margin-top: $inputPadding;
+
+            label {
+                color: $textColor;
+                display: block;
+                text-align: left;
+            }
+
+            textarea{height:auto;}
+            .input {
+                @include borderStyling;
+                @include coolMixin ($textColor, rgba(0, 0, 0, 0.336));
+                width: 100%;
+               
+                font-size: $inputPadding!important;
+                padding: $inputPadding!important;
+                border-radius: $borderRadius;
+            }
+
+        }
+
+        button {
+            @include borderStyling;
+            @include coolMixin ($textColor, rgba(0, 0, 0, 0.336));
+            margin-top: $inputPadding;
+            padding: $inputPadding;
+            border-radius: $borderRadius;
+        }
+    }
+}
+

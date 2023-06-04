@@ -1,0 +1,205 @@
+body {
+    font-family: 'Red Hat Text', sans-serif;
+    color: #E7E8E9;
+    margin: unset;
+    display: flex;
+    flex-flow: column;
+    background-color: #334368;
+}
+
+* {
+    font-family: 'Chakra Petch', sans-serif !important;
+}
+
+h1 {
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 46px;
+    color: #E7E8E9;
+}
+
+p {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.logo {
+    border: 3px solid green;
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border-radius: 100%;
+    height: 64px;
+    width: 64px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    position:absolute;
+    text-align: center;
+    left: 32px;
+}
+.logo h2{margin:unset!important;}
+
+.hero {
+    background-image: url(https://images.pexels.com/photos/6755146/pexels-photo-6755146.jpeg);
+    background-color: #2E5157;
+    background-size: cover;
+    background-blend-mode: multiply;
+    min-height: 800px;
+}
+
+.title-wrapper {
+    min-height: 600px;
+    padding: 4rem;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.title-row h1 {
+    font-size: 6rem;
+}
+
+.textwrap {
+    height: auto;
+    padding: 4rem;
+    backdrop-filter: blur(50px);
+    text-align: center;
+}
+
+.phoneRepair {}
+
+.constraint {
+    width: 1200px;
+    margin: auto;
+    max-width: 100%;
+}
+
+.phoneRepairPhoto {
+    height: 200px;
+    width: auto;
+    border: 2px solid white !important;
+    border-radius: 10px;
+}
+
+.laptopRepairPhoto {
+    height: 200px;
+    width: auto;
+    border: 2px solid white !important;
+    border-radius: 10px;
+}
+
+.accessoriesPhoto {
+    height: 200px;
+    width: auto;
+    border: 2px solid white !important;
+    border-radius: 10px;
+}
+
+header {
+    padding: 2rem;
+    display: flex !important;
+    justify-content: center;
+    position: fixed;
+    z-index: 2;
+    top: 0px;
+    backdrop-filter: blur(10px)brightness(0.8);
+    width: 100%;
+}
+
+.reviewsTitle {
+    font-size: 100px;
+    color: rgb(56, 105, 71);
+    text-align: center;
+}
+
+.serviceDesc {
+    color: white !important;
+}
+
+.btn-primary {
+    background-color: black !important;
+    border: solid black !important;
+    box-shadow: unset !important;
+
+
+}
+
+
+.whiteText {
+    color: white !important;
+}
+
+
+.review {
+    text-align: left;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 2px solid rgb(87, 124, 84);
+    background: rgba(87, 124, 84, 0.8);
+}
+
+header h1 {
+    margin: unset;
+
+
+}
+
+.navitem {
+    font-family: 'Chakra Petch', sans-serif;
+    color: white;
+    letter-spacing: 5px;
+    padding: 1rem;
+    display: inline-block;
+
+}
+
+.navitem:hover {
+    color: white !important;
+    transform: scale(1.1) !important;
+    -webkit-transform: scale(1.1);
+    display: inline-block;
+    text-decoration: none !important;
+
+}
+
+nav {
+    padding: 1rem;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+footer {
+    padding: 1rem;
+
+}
+
+form {
+    display: flex;
+    flex-flow: column;
+    width: 800px;
+    max-width: 100%;
+    margin: auto;
+    margin-bottom: 2rem;
+
+}
+
+iframe {
+    width: 800px;
+
+}
+
+form>input,
+textarea {
+    margin-bottom: 1rem;
+    border: 2px solid rgb(56, 105, 71);
+    background: rgba(0, 0, 0, 0.336);
+    color: white;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.submitButton {
+    cursor: grab;
+}

@@ -1,0 +1,49 @@
+.faq-fullwidth {
+  width: 100%;
+}
+.text-wrap {
+  white-space: normal;
+  word-wrap: break-word;
+}
+.blackborder {
+  border-color: #000;
+  border-width: 2px;
+  border-style: solid;
+}
+.faq-hero {
+  height: 100vh;
+}
+.faq-hero .title-wrapper {
+  justify-content: flex-start;
+  padding-top: 200px;
+}
+.faq-hero .faqbody .faqitem {
+  padding-top: 1rem;
+}
+.faq-hero .faqbody .faqitem .btn {
+  font-size: 32px;
+  background-color: #000000 !important;
+  color: #a9a3a3;
+  width: 100%;
+  white-space: normal;
+  word-wrap: break-word;
+}
+.faq-hero .faqbody .faq-content {
+  padding: 3rem;
+  backdrop-filter: blur(10px);
+  font-size: 19.5px !important;
+}
+@media (max-width: 1080px) {
+  section {
+    width: 100%;
+  }
+  .btn {
+    width: 100%;
+    white-space: inherit;
+  }
+  .btn p {
+    display: flex;
+    white-space: initial;
+    max-width: 100%;
+  }
+}
