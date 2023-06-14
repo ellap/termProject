@@ -19,7 +19,17 @@ $borderColor: rgb(56, 105, 71);
     background-color: $bg;
 }
 
+.big-margin {
+    margin-top: 15rem;
+}
+
+.contact-hero{    min-height: 100vh;
+}
 .contact-wrapper {
+    color: white;
+    backdrop-filter: blur(10px)brightness(0.7);
+    padding: 4rem;
+    
 
     form {
         @media (min-width:1080px){

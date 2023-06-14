@@ -7,8 +7,61 @@ body {
     background-color: #334368;
 }
 
+option,
+select {
+    background-color: #334368;
+}
+
+select {
+    margin-bottom: 1rem;
+    border: 2px solid rgb(56, 105, 71);
+    background: rgba(0, 0, 0, 0.336);
+    color: white;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
 * {
     font-family: 'Chakra Petch', sans-serif !important;
+}
+
+.about-section {
+    color: white;
+    backdrop-filter: blur(10px)brightness(0.7);
+    padding: 4rem;
+}
+
+.preout {
+    font-weight: 100;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 46px;
+    color: #E7E8E9;
+}
+
+.output {
+    font-weight: 100;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 46px;
+    color: #E7E8E9;
+    white-space: pre;
+    content: '';
+}
+
+.typing-cursor {
+    display: inline-block;
+    animation: blink-caret 0.75s step-end infinite;
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: black;
+    }
 }
 
 h1 {
@@ -29,17 +82,21 @@ p {
     border-radius: 100%;
     height: 64px;
     width: 64px;
+    margin-right: auto;
     display: flex;
     flex-flow: column;
     justify-content: center;
-    position:absolute;
+    position: relative;
     text-align: center;
     left: 32px;
 }
-.logo h2{margin:unset!important;}
+
+.logo h2 {
+    margin: unset !important;
+}
 
 .hero {
-    background-image: url(https://images.pexels.com/photos/6755146/pexels-photo-6755146.jpeg);
+    background-image: url(../images/circuit-board.jpeg);
     background-color: #2E5157;
     background-size: cover;
     background-blend-mode: multiply;
@@ -97,7 +154,8 @@ p {
 header {
     padding: 2rem;
     display: flex !important;
-    justify-content: center;
+    justify-content: space-between;
+    flex-flow: row;
     position: fixed;
     z-index: 2;
     top: 0px;
@@ -120,14 +178,11 @@ header {
     border: solid black !important;
     box-shadow: unset !important;
 
-
 }
-
 
 .whiteText {
     color: white !important;
 }
-
 
 .review {
     text-align: left;
@@ -139,7 +194,6 @@ header {
 
 header h1 {
     margin: unset;
-
 
 }
 
@@ -202,4 +256,66 @@ textarea {
 
 .submitButton {
     cursor: grab;
+}
+
+.ham {
+    margin: auto;
+}
+
+@media screen and (max-width:1000px) {
+    .ham {
+        margin-left: auto;
+        width: 20px;
+        position: relative;
+        min-height: 4px;
+        background: white;
+        display: flex;
+        height: 4px;
+
+    }
+
+    .ham>nav {
+        height: 0vh;
+        transition: all 0s ease;
+        width: 100vw;
+        display: flex;
+        transition-delay: 2s;
+    }
+
+    .ham::after {
+        content: '';
+        width: 100%;
+        top: -8px;
+        border-bottom: 4px solid white;
+        position: absolute;
+    }
+
+    .ham::before {
+        content: '';
+        width: 100%;
+        bottom: -8px;
+        border-bottom: 4px solid white;
+        position: absolute;
+    }
+
+    .ham:hover nav {
+        background: black;
+        height: 50vh;
+        transition-delay: 0s;
+    }
+
+    nav {
+        width: 100vw;
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        flex-flow: column;
+        display: flex !important;
+        overflow: hidden;
+    }
+
+    nav:hover {
+        height: 50vh;
+        background: black;
+    }
 }

@@ -10,8 +10,17 @@
   border-width: 2px;
   border-style: solid;
 }
+.product-wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: wrap;
+}
+.product-wrap .column {
+  display: flex;
+  flex-flow: column;
+}
 .faq-hero {
-  height: 100vh;
+  min-height: 100vh;
 }
 .faq-hero .title-wrapper {
   justify-content: flex-start;

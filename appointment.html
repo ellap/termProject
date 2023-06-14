@@ -10,15 +10,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch&family=Red+Hat+Text:wght@300;400&display=swap"
         rel="stylesheet">
-
+        
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" href="styles/easy.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
-    <title>CONTACT</title>
+    <title>About</title>
+    
 </head>
 
 <body>
@@ -39,45 +39,37 @@
         </div>
     </header>
 
-    <div class="hero contact-hero">
+    <div class="hero faq-hero">
 
         <div class="title-wrapper">
+            <div class="about-section">
+            <h1 style="text-align:center;">Appointment Scheduling</h1>
 
-            <div class="contact-wrapper big-margin">
-                <h1 style="text-align:center;">Contact Us</h1>
-                <form action="https://formspree.io/f/mqkoorwv" method="POST">
-                    <div class="labelWrap">
-                        <label>
-                            Your name:
-                        </label>
-                        <input class="input" type="name" name="name">
-                        
-                </div>
-                <div class="labelWrap">
-                    <label>
-                        Your email:
-                    </label>
-                    <input class="input" type="email" name="email">
-                </div>
-                <div class="labelWrap">
-
-                    <label>
-                        Your message:
-                    </label>
-                    <textarea class="input" name="message"></textarea>
-                </div>
-
-                  
-                    <button type="submit">Send</button>
-                </form>
-
-                <p>503-555-5555</p>
-                <p>gadget@gurus.com</p>
-                <p>123 N Couch St. Portland OR 97209</p>
-
-            </div>
-
-        </div>
+            <form>
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required><br>
+          
+              <label for="phone">Phone Number:</label>
+              <input type="tel" id="phone" name="phone" required><br>
+          
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required><br>
+          
+              <label for="service">Service:</label>
+              <select id="service" name="service">
+                <option value="phone-screen-replacement">Phone Screen Replacement</option>
+                <option value="phone-repair">Phone Repair (General)</option>
+                <option value="computer-running-slow">Computer Running Slow</option>
+                <option value="computer-not-working">Computer Not Working</option>
+                <option value="laptop-not-working">Laptop Not Working</option>
+                <option value="laptop-screen-repair">Laptop Screen Repair</option>
+              </select><br>
+          
+              <label for="date">Preferred Date:</label>
+              <input type="date" id="date" name="date" required><br>
+          
+              <input type="submit" value="Submit">
+            </form></div></div>
     </div>
 
 </body>
