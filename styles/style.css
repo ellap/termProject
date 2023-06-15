@@ -47,6 +47,17 @@ select {
     content: '';
 }
 
+.store-hours {
+      color: white;
+     
+      margin-top: auto;
+      margin-bottom: auto;  
+}
+
+.store-hours>p {
+    font-size: 2rem;
+}
+
 .typing-cursor {
     display: inline-block;
     animation: blink-caret 0.75s step-end infinite;
@@ -111,6 +122,11 @@ p {
     justify-content: center;
 }
 
+.title-info-row {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
 .title-row h1 {
     font-size: 6rem;
 }
@@ -275,6 +291,8 @@ textarea {
 
     }
 
+   
+
     .ham>nav {
         height: 0vh;
         transition: all 0s ease;
@@ -313,6 +331,12 @@ textarea {
         flex-flow: column;
         display: flex !important;
         overflow: hidden;
+    }
+
+    .title-info-row {
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
     }
 
     nav:hover {
