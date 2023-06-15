@@ -270,7 +270,8 @@ textarea {
         min-height: 4px;
         background: white;
         display: flex;
-        height: 4px;
+        height: 4px;    margin: auto 2rem;margin-left:auto;
+
 
     }
 
@@ -318,4 +319,5 @@ textarea {
         height: 50vh;
         background: black;
     }
+    nav>a:hover{padding-left:3rem!important;}
 }
